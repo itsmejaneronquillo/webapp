@@ -1,0 +1,21 @@
+.inventory-table {
+width: 100%;
+border-collapse: collapse;
+font-family: Arial,helvetica,sans-serif;
+font-size:18px;
+
+}
+.inventory-table thead th {
+background: #0000ff;
+color: #fff;
+text-align: left;
+padding: 18px 25px;
+border:1px solid #bfbfbf;
+}
+.inventory-table td {
+padding: 18px 25px;
+border:1px solid #e0e0e0;
+background: #fff;
+}
+.inventory-table tbody tr:hover{
+background :#f7f7f7;
