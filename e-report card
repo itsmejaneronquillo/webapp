@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> E-Report Card</title>
+
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .report {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1f4e79;
+            font-size: 18px;
+        }
+
+        h4 {
+            color: #1f4e79;
+            border-bottom: 1px solid #1f4e79;
+            padding-bottom: 6px;
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        th {
+            background: #1f4e79;
+            color: white;
+            padding: 6px;
+        }
+
+        td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background: #eeeeee;
+        }
+
+        .info td {
+            text-align: left;
+        }
+
+        .label {
+            background: #e5f0f5;
+            font-weight: bold;
+        }
+
+        .white {
+            background: white;
+        }
+
+        .passed {
+            color: green;
+        }
+
+        /* General Average row */
+        .average td {
+            background: #1f4e79;
+            color: white;
+            font-weight: bold;
+            padding: 6px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #555;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class="report">
+
+    <h2>E-REPORT CARD</h2>
+
+    <h4>Student Information</h4>
+
+    <table class="info">
+
+        <tr>
+            <td class="label">Student Name</td>
+            <td>Jane H. Ronquillo</td>
+
+            <td class="label">Student ID</td>
+            <td>2026-00125</td>
+        </tr>
+
+        <tr>
+            <td class="label">Course</td>
+            <td class="white">Associate Computer Technology</td>
+
+            <td class="label">Year Level</td>
+            <td class="white">2nd Year</td>
+        </tr>
+
+        <tr>
+            <td class="label">Semester</td>
+            <td>1st Semester</td>
+
+            <td class="label">School Year</td>
+            <td>2026 - 2027</td>
+        </tr>
+
+    </table>
+
+
+    <h4>Academic Grades</h4>
+
+    <table>
+
+        <tr>
+            <th>Course Code</th>
+            <th>Subject</th>
+            <th>Units</th>
+            <th>Grade</th>
+            <th>Remarks</th>
+        </tr>
+
+        <tr>
+            <td>IT 201</td>
+            <td>Web Development</td>
+            <td>3</td>
+            <td>82</td>
+            <td class="passed">Passed</td>
+        </tr>
+
+        <tr>
+            <td>IT 202</td>
+            <td>Database Management</td>
+            <td>3</td>
+            <td>89</td>
+            <td class="passed">Passed</td>
+        </tr>
+
+        <tr>
+            <td>IT 203</td>
+            <td>Object-Oriented Programming</td>
+            <td>3</td>
+            <td>91</td>
+            <td class="passed">Passed</td>
+        </tr>
+
+        <tr>
+            <td>IT 204</td>
+            <td>Computer Networks</td>
+            <td>3</td>
+            <td>87</td>
+            <td class="passed">Passed</td>
+        </tr>
+
+        <tr>
+            <td>IT 205</td>
+            <td>Systems Analysis and Design</td>
+            <td>3</td>
+            <td>90</td>
+            <td class="passed">Passed</td>
+        </tr>
+
+        <tr>
+            <td>GE 201</td>
+            <td>Ethics</td>
+            <td>3</td>
+            <td>94</td>
+            <td class="passed">Passed</td>
+        </tr>
+
+        <!-- GENERAL AVERAGE -->
+        <tr class="average">
+            <td>General</td>
+            <td>Average</td>
+            <td>—</td>
+            <td>90.5</td>
+            <td>PASSED</td>
+        </tr>
+
+    </table>
+
+
+    <div class="footer">
+
+        <p>Prepared by: College Registrar</p>
+
+        <p>
+            This is an electronic report card for academic purposes.
+        </p>
+
+    </div>
+
+</div>
+
+  
