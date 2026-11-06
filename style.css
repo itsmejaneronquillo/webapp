@@ -1,105 +1,179 @@
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:linear-gradient(135deg,#4f8df9,#6cc1ff);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f5f9;
+    color: #333;
+    min-height: 100vh;
+    padding: 30px 20px;
 }
 
-
-.container{
-    width:100%;
-    max-width:450px;
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-
-.container h2{
-    text-align:center;
-    color:#333;
-    margin-bottom:25px;
+/* Page heading */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #111827;
+    margin: 20px 0 42px;
 }
 
-
-label{
-    display:block;
-    margin-bottom:6px;
-    font-weight:bold;
-    color:#444;
+/* Form section */
+form {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 40px;
 }
 
-
-input,
-select,
-textarea{
-    width:100%;
-    padding:12px;
-    margin-bottom:18px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-size:15px;
-    transition:.3s;
+/* Form labels */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #374151;
 }
 
-
-input:focus,
-select:focus,
-textarea:focus{
-    border-color:#0d6efd;
-    outline:none;
-    box-shadow:0 0 8px rgba(13,110,253,.3);
+/* Text and email inputs */
+input[type="text"],
+input[type="email"] {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-
-textarea{
-    resize:vertical;
-    min-height:100px;
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #64748b;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.12);
 }
 
-
-input[type="file"]{
-    padding:8px;
-    background:#f8f9fa;
+/* Update button */
+button,
+input[type="submit"] {
+    display: inline-block;
+    padding: 11px 22px;
+    background-color: #087fc7;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-
-button{
-    width:100%;
-    padding:13px;
-    border:none;
-    border-radius:8px;
-    background:#0d6efd;
-    color:#fff;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
+button:hover,
+input[type="submit"]:hover {
+    background-color: #0669a8;
 }
 
-button:hover{
-    background:#0b5ed7;
-    transform:translateY(-2px);
+/* Table wrapper */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 35px;
 }
 
-button:active{
-    transform:scale(.98);
+/* Records table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
+/* Table heading */
+thead {
+    background-color: #f9fafb;
+}
 
-@media(max-width:500px){
-    .container{
-        padding:20px;
+th {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Table data */
+td {
+    padding: 13px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Table row hover */
+tbody tr:hover {
+    background-color: #f3f6fa;
+}
+
+/* Action buttons */
+.edit-btn {
+    background-color: #087fc7;
+    padding: 7px 12px;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    padding: 7px 12px;
+}
+
+.edit-btn:hover {
+    background-color: #0669a8;
+}
+
+.delete-btn:hover {
+    background-color: #b02a37;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 27px;
+        margin: 20px 0 30px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+        white-space: nowrap;
     }
 }
